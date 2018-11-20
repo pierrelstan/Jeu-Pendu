@@ -46,10 +46,9 @@ constructor(){
 
     Random(){
       let arr = RandomWords.length;
-      let random = Math.floor(Math.random() * arr)
-      console.log(RandomWords[random].words)
-      return RandomWords[random].words
-      
+      let random = Math.floor(Math.random() * arr )
+      //console.log(RandomWords[random].words)
+      return RandomWords[random].words 
     }
     
   // Arrow fx for binding
@@ -65,18 +64,18 @@ constructor(){
       currentSelectLetter: [],
       guesses: 0,
       donMatchedLetter: [],
-      Display: false}) // Mieux !
-      
+      Display: false
+    })    
   }
   add(index) {
     const {phrasedevine,guesses,currentSelectLetter} = this.state;
-    if(phrasedevine.indexOf(index) > -1){
+    if(phrasedevine.includes(index)){
       let newGuesses = guesses + 2; 
       currentSelectLetter.push(index)
-      // let unique = [...new Set(currentSelectLetter)];
-      //console.log(unique)
+      let unique = [...new Set(currentSelectLetter)];
+      
       console.log(currentSelectLetter)
-      this.setState({ currentSelectLetter: [...currentSelectLetter], guesses: newGuesses, Display: false})
+      this.setState({ currentSelectLetter: [...unique], guesses: newGuesses, Display: false})
      
     }
     else {
