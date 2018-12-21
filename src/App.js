@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/App.css';
 import GuesseCount from './components/Guesse';
-import Clavier from './components/KeyBoard';
+import KeyBoard from './components/KeyBoard';
 import Display from './components/Display';
 import WonTheGame from './components/Won';
 import NewGame from './components/NewGame';
@@ -127,14 +127,14 @@ constructor(){
           { won ? <NewGame onClick={this.resetGame} />: lost ? <NewGame onClick={this.resetGame} />
           : phrasedevine.map((phrasedevine,index)=> (
              <Display key={index} phrasedevine={phrasedevine} 
-              usedLetters={currentSelectLetter}  />
+              usedLetters={currentSelectLetter} num={2} />
          ) )
           }
         </div>
         <div className="memory">
        {
          LETTER.map((letter,index) => (
-            <Clavier key={index} index={index} letter={letter} feedback={this.getFeedbackForKeyboard(letter)} onClick={this.handleClick} />
+            <KeyBoard key={index} letter={letter} index={index} feedback={this.getFeedbackForKeyboard(letter)} onClick={this.handleClick} />
          ))
           
        } 

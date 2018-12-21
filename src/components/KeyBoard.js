@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Clavier = ({ letter, onClick, feedback}) => {
+const KeyBoard = ({ letter, onClick, feedback,index}) => {
     return (
         <div>
-            <div onClick={() => onClick(letter)} className="block">
+            <div onClick={() => onClick(letter,index)} className="block">
                   <span>
                     <button className={`button ${feedback}`}>{letter}</button>
                   </span>
@@ -14,9 +14,9 @@ const Clavier = ({ letter, onClick, feedback}) => {
     )
 
 }
-Clavier.propTypes= {
+KeyBoard.propTypes= {
     letter:PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
     feedback: PropTypes.string.isRequired,
 }
-export default Clavier;
+export default KeyBoard;

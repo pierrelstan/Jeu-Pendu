@@ -44,17 +44,7 @@ border-radius: 15px 50px 10px;
   user-select: none;
   padding-bottom: 23px;
 }
-.memory > .block {
-    
-    font-size: 2em;
-  flex: 1   calc(100% / 13 - 0.4em);
-  outline: 0.08em solid silver;
-  margin: 0.2em;
-  display: flex;
-  cursor: default;
-     
 
-}
 .button {
     background-color: #7F7154;
     color: white;
