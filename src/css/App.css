@@ -97,3 +97,65 @@ margin: 12px;
     margin: 4px 2px;
     cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+  .button {
+    background-color: #7F7154;
+    color: white;
+    border:none;
+    margin: 1px;
+     font-size: 16px;
+}
+/* .keyboard{
+  width:200px; height: 120px;
+  background-color: #111;
+  margin: 0px auto;
+  border-radius: 9px;
+  padding: 30px;
+  color: #eee;
+  
+} */
+.memory {
+  display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* margin: auto; */
+    justify-content: center;
+    /* max-width: 240px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* padding-bottom: 23px; */
+    /* position: fixed; */
+    /* left: 0; */
+    /* bottom: 0; */
+
+}
+.jeu-pendu__title {
+    text-align: center;
+    font-family: 'Abril Fatface', serif;
+    color: #7f652e;
+    margin-top: 0;
+    font-weight: bold;
+     font-size: 26px; 
+}
+
+.phrasedevine {
+display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* text-align: center; */
+    margin: 4px;
+    /* width: 100px; */
+    padding-bottom: 14px;
+}
+.phrase {
+    color: rgb(255, 255, 255);
+    font-family: 'Abril Fatface', serif;
+    /* width: 42px; */
+    background-color: brown;
+    border: #111;
+    font-size: 26px;
+}
+}
