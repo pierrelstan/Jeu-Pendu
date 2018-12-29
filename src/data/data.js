@@ -1,4 +1,4 @@
-const RandomWords = [
+export let RandomWords = [
     {
         words: ["A", "B", "C"],
         title: "ALPHABET"

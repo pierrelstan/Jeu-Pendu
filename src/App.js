@@ -6,7 +6,8 @@ import Display from './components/Display';
 import WonTheGame from './components/Won';
 import NewGame from './components/NewGame';
 import Lost from './components/Lost';
-import WinOrLost from './components/WinOrLost';
+import WinOrLost from './components/WinOrLost'
+import { RandomWords } from './data/data';
 
 const LETTER = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
@@ -26,8 +27,6 @@ constructor(){
   }
   
 }
-
-
     Random(){
       let arr = RandomWords.length;
       let random = Math.floor(Math.random() * arr )
