@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Jeu-Pendu/precache-manifest.65b6647cccf1e6d385f163253f82d795.js"
+  "/Jeu-Pendu/precache-manifest.b4170490135365f0388f6d1cae4478ac.js"
 );
 
 workbox.clientsClaim();
