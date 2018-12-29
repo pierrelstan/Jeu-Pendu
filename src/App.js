@@ -11,17 +11,15 @@ import WinOrLost from './components/WinOrLost';
 const LETTER = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 const RandomWords = [
   {
-    words: ["A","B","C"],
+    words: ["ABC"],
     title: "ALPHABET"
   },
   {
-    words: ["P", "O", "R",
-      "C", "H","E"],
+    words: ["PORCHE"],
     title: "Car"
   },
   {
-    words: ["Y", "A", "T", "C",
-      "H"],
+    words: ["YATCH"],
     title: "BOAT"
   },
   /* and so on... */
@@ -54,7 +52,7 @@ constructor(){
   // Arrow fx for binding
   handleClick = (index)=> { 
     
-   this.add(index)
+   this.add(index)   
 }
 
 //Arrow fx for binding
